@@ -14,6 +14,24 @@ h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
+.infobox {
+    background-color: rgba(255, 255, 255, 0.1); /* Lys baggrund */
+    border: 2px solid #ff6f61; /* Kantfarve */
+    padding: 20px; /* Indvendig polstring */
+    border-radius: 10px; /* Rundede hjørner */
+    margin: 20px auto; /* Margin for centering */
+    max-width: 800px; /* Maksimal bredde */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Skyggeeffekt */
+}
+
+.infobox h2 {
+    color: #ff6f61; /* Overskrift farve */
+}
+
+.infobox p {
+    font-size: 1.2em; /* Tekststørrelse */
+    line-height: 1.5; /* Linjeafstand */
+}
 p {
     font-size: 1em;
     color: #f8f8f8;
