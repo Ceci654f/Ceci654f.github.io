@@ -29,8 +29,8 @@ h1 {
 }
 
 .infobox p {
-    font-size: 1.2em; /* Tekststørrelse */
-    line-height: 1.5; /* Linjeafstand */
+    font-size: 1.5em; /* Tekststørrelse */
+    line-height: 1.6; /* Linjeafstand */
 }
 p {
     font-size: 1em;
