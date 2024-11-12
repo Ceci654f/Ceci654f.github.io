@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Farverige Hjemmeside</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav>
+        <a href="./index.html">Forsiden</a>
+        <a href="./om.html">Om</a>
+        <a href="./galleri.html">Galleri</a>
+        <a href="./kontakt.html">Kontakt</a> <!-- Tilføjet ID for kontaktknappen -->
+    </nav>
+
+    <div id="contact">
+        <h1>Kontakt Mig</h1>
+        <form id="contactForm" onclick="hideOnClick()">
+            <input type="text" id="name" placeholder="Dit navn" required>
+            <input type="email" id="email" placeholder="Din e-mail" required>
+            <textarea id="messageInput" placeholder="Din besked" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div id="message"></div> <!-- Her vises feedback til brugeren -->
+    </div>
+
+    <script>
+        const contactBtn = document.getElementById('contactBtn'); // Hent kontaktknappen
+        const contactDiv = document.getElementById('contact'); // Hent kontaktformularen
+        const contactForm = document.getElementById('contactForm');
+
+
+        // Håndter kontaktformularens indsendelse
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Forhindrer standardformularhandling
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const messageDiv = document.getElementById('message');
+
+            // Viser besked til brugeren
+            messageDiv.style.display = 'block';
+            messageDiv.innerText = 'Tak for din besked, ' + name + '! Vi vender tilbage til dig snart.';
+            messageDiv.style.color = '#fff'; // Hvid farve for teksten
+            messageDiv.style.backgroundColor = '#007bff'; // Blå baggrund
+            messageDiv.style.padding = '10px';
+            messageDiv.style.borderRadius = '5px';
+
+            // Tømmer formularfelterne
+            document.getElementById('name').value = '';
+            document.getElementById('email').value = '';
+            document.getElementById('messageInput').value = '';
+        });
+
+        // Skjul beskeden, når der klikkes på formularfelterne
+        $(document).ready(function() {
+            // Vælg alle input- og textarea-felter
+            $('input, textarea').on('focus', function() {
+                // Skjul elementet når et felt får fokus
+                $('#message').hide();
+            });
+
+            // Valgfrit: Vis elementet igen når felterne mister fokus
+            //$('input, textarea').on('blur', function() {
+            $('input, textarea').on('blur', function() {
+                // Kontroller om andre felter stadig har fokus
+                if (!$('input:focus, textarea:focus').length) {
+                    $('#message').show();
+                }
+            });
+        });
+
+        // Initial skjul indhold
+        extraContent.style.display = 'none';
+        imageGallery.style.display = 'none';
+        contactDiv.style.display = 'none'; // Skjuler kontaktformularen ved start
+    </script>
+    <footer id="footer">
+        <h2>Kontaktoplysninger</h2>
+        <p><strong>Adresse:</strong> Hovedgaden 45, 1234 København</p>
+        <p><strong>Telefon:</strong> +45 12 34 56 78</p>
+        <p><strong>Email:</strong> kontakt@minvirksomhed.dk</p>
+        <p><strong>Åbningstider:</strong> Mandag-Fredag: 9:00-17:00</p>
+    </footer>
+</body>
+</html>

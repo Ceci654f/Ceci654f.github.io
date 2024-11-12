@@ -1,0 +1,253 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    color: #fdfdfd;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.5em;
+    color: #f8f8f8;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+a {
+    display: inline-block;
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: #ff5a3c;
+}
+
+#extraContent {
+    display: none;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#extraContent h2 {
+    color: #ffeadb;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+#extraContent ul {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+    list-style: none;
+}
+
+#extraContent li {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fdfdfd;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+#imageGallery img {
+    display:flex; 
+    justify-content: space-between; 
+    overflow-x: auto; 
+    white-space: nowrap;
+ }
+ 
+ .gallery-item {
+    display: inline-block;
+    width: 30%; 
+    margin-right: 10px; 
+    text-align: center; 
+}
+
+.gallery-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+.gallery-item p {
+    margin-top: 10px; 
+    font-size: 14px; 
+    color: #333; 
+    font-weight: bold;
+}
+#contact {
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left; /* Justerer tekst til venstre inden i formularen */
+    max-width: 600px; /* Maksimal bredde på formularen */
+    margin: 20px auto; /* Centrerer formularen */
+}
+
+/* Justeret størrelse på input- og textarea-felter */
+input, textarea {
+    width: 100%; /* Gør dem til 100% af formularens bredde */
+    padding: 8px; /* Justeret padding */
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em; /* Mindre tekststørrelse */
+    box-sizing: border-box; /* Inkluder padding i bredden */
+}
+
+textarea {
+    height: 80px; /* Angiv en fast højde for tekstområdet */
+    resize: none; /* Forhindrer at brugeren kan ændre størrelsen */
+}
+
+button {
+    background-color: #ff6f61;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Gør knappen til 100% af formularens bredde */
+}
+
+button:hover {
+    background-color: #ff5a3c;
+}
+
+button:focus {
+    outline: none; /* Fjerner fokus-indikator */
+}
+
+#message {
+    margin-top: 20px;
+    color: #fff; /* Hvid farve for teksten */
+    background-color: #007bff; /* Blå baggrund */
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block; /* Gør at den kan få en bredde */
+    display: none; /* Gør at den kan få en bredde */
+}
+.hide {
+    display: none;
+}
+.infobox {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid #8e735b;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+#footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: left;
+}
+
+#footer h2 {
+    margin-bottom: 15px;
+}
+
+#footer p {
+    margin: 5px 0;
+}
+
+#footer strong {
+    color: #ff6f61;
+}
+.about-section {
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+}
+
+.about-section h2 {
+    color: #ff6f61;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.about-section li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.about-section strong {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+#milepaele {
+    margin: 20px auto; /* Centrerer sektionen */
+    padding: 20px; /* Tilføjer polstring */
+    background-color: rgba(255, 255, 255, 0.1); /* Lys baggrund */
+    border-radius: 8px; /* Rundede hjørner */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Let skygge */
+}
+
+#milepaele ul {
+    list-style-type: none; /* Ingen standard punkttegn */
+    padding-left: 0; /* Ingen indrykning */
+}
+
+#milepaele li {
+    margin-bottom: 10px; /* Plads mellem listeelementer */
+    font-size: 1.2em; /* Større tekststørrelse for listeelementer */
+}
+
+#teknologier ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#teknologier li {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    flex-basis: calc(50% - 20px);
+    border: 2px solid #ff6f61;
+}
