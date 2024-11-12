@@ -159,16 +159,17 @@ button {
 }
 
 #footer {
-   position: fixed; /* Gør footeren fast i bunden af skærmen */
-   bottom: 0; /* Placerer footeren i bunden */
-   left: 0; /* Justerer til venstre side */
-   width: 100%; /* Fuld bredde */
-   padding: 20px; /* Indvendig polstring */
-   background-color: rgba(0, 0, 0, .7); /* Baggrundsfarve */
-   color: #fff; /* Tekstfarve */
-   text-align:left; /* Justering af tekst til venstre */
+   display:flex; /* Gør footeren til en flex container */
+   justify-content:center; /* Centrerer indholdet horisontalt */
+   align-items:center; /* Centrerer indholdet vertikalt */
+   position:absolute; /* Gør footeren fast i bunden af containeren */
+   bottom:0; /* Placerer footeren i bunden af viewporten */
+   left:0; /* Justerer til venstre side */
+   width:100%; /* Fuld bredde */
+   padding:20px; /* Indvendig polstring */
+   background-color:#000000cc; /* Semi-transparent baggrundsfarve */
+   color:#fff; /* Tekstfarve */
 }
-
 
 /* Responsive design for mobile devices */
 @media screen and (max-width :767 px) {
