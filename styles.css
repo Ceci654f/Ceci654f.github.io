@@ -166,6 +166,7 @@ button {
 
 .content {
   flex: 1 0 auto;
+  padding 15px;
 }
 
 .footer {
@@ -175,11 +176,12 @@ button {
    /*position:absolute; /* Gør footeren fast i bunden af containeren */
    /*bottom:0; /* Placerer footeren i bunden af viewporten */
    /*left:0; /* Justerer til venstre side */
+   flex-shrink: 0; 
    width:100%; /* Fuld bredde */
    padding:20px; /* Indvendig polstring */
-   background-color:#000000cc; /* Semi-transparent baggrundsfarve */
+   background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent baggrundsfarve */
    color:#fff; /* Tekstfarve */
-   flex-shrink: 0;
+   text-align: center;
 }
 
 /* Responsive design for mobile devices */
