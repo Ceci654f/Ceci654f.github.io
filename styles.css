@@ -1,4 +1,7 @@
 /* Base styles (mobile first) */
+html, body {
+  height: 100%;
+}
 body {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #ff7e5f, #feb47b);
@@ -6,6 +9,9 @@ body {
     text-align: center;
     padding: 10px;
     margin: 0;
+    
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
