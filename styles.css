@@ -261,6 +261,10 @@ button:focus {
         flex-direction: column;
         align-items: center;
     }
+    .about-section {
+        margin: 0.5em auto;
+        padding: 15px; /* Reduced padding for smaller screens */
+    }
 
     .gallery-item {
         margin-bottom: 20px;
