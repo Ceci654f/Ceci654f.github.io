@@ -250,10 +250,13 @@ button:focus {
 /* Responsive design for mobile devices */
 @media screen and (max-width: 767px) {
     nav a {
-        padding: 15px 0;
-        display: block;
-        margin-bottom: 10px;
-    }
+    color: #fff;
+    margin: 0.5em; /* Tilføjer 0,5 em margin på alle sider */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.5em; /* Justerer padding for at give plads til tekst */
+    display: inline-block; /* Sikrer at margin anvendes korrekt */
+}
 
     nav {
         display: flex;
