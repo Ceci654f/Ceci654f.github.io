@@ -74,13 +74,10 @@ nav {
 }
 
 nav a {
-    padding: 0.5em;
-    /* Behold andre eksisterende styles for nav a */
     color: #fff;
     margin: 0 15px;
     text-decoration: none;
     font-size: 1.1em;
-    display: inline-block; /* Dette sikrer, at padding anvendes korrekt */
 }
 
 #imageGallery img {
