@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR-kode Generator</title>
+    <!-- Link til den omdøbte CSS-fil -->
+    <link rel="stylesheet" href="custom-style.css">
+</head>
+<body>
+    <h1>QR-kode til din hjemmeside</h1>
+    <div id="qrcode"></div>
+
+    <!-- Inkluder qrcode.min.js fra din lokale mappe -->
+    <script src="qrcode.min.js"></script>
+    <script>
+        // Generer QR-koden med lilla og lyserød farve
+        var qrcode = new QRCode(document.getElementById("qrcode"), {
+            text: "https://ceci654f.github.io",
+            width: 256, // Bredden af QR-koden
+            height: 256, // Højden af QR-koden
+            colorDark: "#800080", // Forgrundsfarve (lilla)
+            colorLight: "#ffc0cb" // Baggrundsfarve (lyserød)
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+body {
+    background-color: #f0e4f7; /* Lys lilla baggrundsfarve */
+    color: #4a235a; /* Mørkere lilla tekstfarve */
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #6a0dad; /* Dybere lilla farve til overskriften */
+}
+
+#qrcode {
+    display: inline-block;
+    padding: 15px;
+    background-color: #ffe6f7; /* Lys lyserød baggrund omkring QR-koden */
+    border-radius: 15px; /* Runde hjørner */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Blød skygge */
+}
