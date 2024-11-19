@@ -299,4 +299,14 @@ button {
     .about-section {
         max-width: 1200px;
     }
+  #teknologier ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    #teknologier li {
+        flex-basis: calc(33.33% - 20px);
+      width: 100%;
+        margin-bottom: 10px;
+    }
 }
